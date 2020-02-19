@@ -1,0 +1,21 @@
+
+## Homework01
+### Calculator
+    Đào Ngọc Thành - add homework01/Calculator.java
+    Nguyễn Đức Dũng - clone the project and modify homework01/Calculator.java
+    Đào Ngọc Thành - modify homework01/Calculator.java in the same time
+    so we have a conflict 
+    ![conflic demo](https://res.cloudinary.com/drohtc5k3/image/upload/v1568736986/1.png)
+    Đào Ngọc Thành pull, resolve the conflict and merge it to the orgin master
+### HelloWorld.java
+    Trần Bích Ngọc added HelloWorld.java
+    Vũ Thanh Tùng modified HelloWorld.java, commit and push but Đào Ngọc Thành
+    modified content in Calculator.java, so pushing is rejected. Hence, Vũ Thanh TÙng
+    pull but merge conflict cause of HelloWorld.java:
+
+    <<<<<<< HEAD 
+    import javax.swing.JOptionPane;
+    =======
+    >>>>>>> 67f2a6eda3233691b20976d4ae5b4a99b8465ef1
+
+    Solve it, git add . then commit and push again

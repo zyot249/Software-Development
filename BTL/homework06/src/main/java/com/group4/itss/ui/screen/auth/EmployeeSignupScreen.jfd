@@ -1,0 +1,212 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_212-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "title"
+				"text": "Employee Signup"
+				"font": new java.awt.Font( "Lucida Grande", 0, 30 )
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 315
+				"y": 10
+				"width": 270
+				"height": 70
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbEmail"
+				"text": "Email*:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 150
+				"y": 90
+				"width": 130
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbPassword"
+				"text": "Password*:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 150
+				"y": 140
+				"width": 130
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbDOB"
+				"text": "DOB:"
+				"horizontalAlignment": 0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 480
+				"y": 290
+				"width": 100
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbGender"
+				"text": "Gender*:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 150
+				"y": 290
+				"width": 130
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtfEmail"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color gray, 1, true )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 280
+				"y": 90
+				"width": 470
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "txtfPassword"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color gray, 1, true )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 280
+				"y": 140
+				"width": 470
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "rbtnMale"
+				"text": "Male"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rbtnMaleActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 280
+				"y": 290
+				"width": 100
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JRadioButton" ) {
+				name: "rbtnFemale"
+				"text": "Female"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "rbtnFemaleActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 380
+				"y": 290
+				"width": 100
+				"height": 30
+			} )
+			add( new FormComponent( "com.group4.itss.common.JFormattedDateTextField" ) {
+				name: "txtfDOB"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color gray, 1, true )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 580
+				"y": 290
+				"width": 170
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbConfirmPassword"
+				"text": "Confirm password*:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 30
+				"x": 150
+				"y": 190
+			} )
+			add( new FormComponent( "javax.swing.JPasswordField" ) {
+				name: "txtfConfirmPassword"
+				"border": &LineBorder0 new javax.swing.border.LineBorder( sfield java.awt.Color gray, 1, true )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 470
+				"height": 30
+				"x": 280
+				"y": 190
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnCancel"
+				"text": "Cancel"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnCancelActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 235
+				"y": 440
+				"width": 180
+				"height": 33
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSignUp"
+				"text": "Sign up"
+				"enabled": false
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "btnSignupActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 485
+				"y": 440
+				"width": 180
+				"height": 33
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbErrorMessage"
+				"text": "text"
+				"foreground": sfield java.awt.Color red
+				"horizontalAlignment": 0
+				"visible": false
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 150
+				"y": 380
+				"width": 600
+				"height": 25
+			} )
+			add( new FormComponent( "javax.swing.JCheckBox" ) {
+				name: "cbAgreeTerm"
+				"text": "I agree the terms of the agreement"
+				addEvent( new FormEvent( "java.awt.event.ActionListener", "actionPerformed", "cbAgreeTermActionPerformed", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 308
+				"y": 412
+				"width": 285
+				"height": 20
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbSystem"
+				"text": "System*:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 30
+				"x": 150
+				"y": 340
+			} )
+			add( new FormComponent( "javax.swing.JComboBox" ) {
+				name: "cmboxSystem"
+				"model": new javax.swing.DefaultComboBoxModel {
+					selectedItem: "Sale"
+					addElement( "Sale" )
+					addElement( "Stock" )
+					addElement( "Order" )
+				}
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 280
+				"y": 340
+				"width": 200
+				"height": 30
+			} )
+			add( new FormComponent( "javax.swing.JLabel" ) {
+				name: "lbName"
+				"text": "Name*:"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 130
+				"height": 30
+				"x": 150
+				"y": 240
+			} )
+			add( new FormComponent( "javax.swing.JTextField" ) {
+				name: "txtfName"
+				"border": #LineBorder0
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 470
+				"height": 30
+				"x": 280
+				"y": 240
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 900, 500 )
+		} )
+	}
+}

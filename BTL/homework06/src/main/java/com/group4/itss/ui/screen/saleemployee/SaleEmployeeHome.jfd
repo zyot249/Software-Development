@@ -1,0 +1,103 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "11.0.4" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+			name: "this"
+			"preferredSize": new java.awt.Dimension( 900, 500 )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "panel1"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, true )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label1"
+					"text": "Thanh Tung Vu"
+					"horizontalAlignment": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 420
+					"y": 5
+					"width": 350
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "label2"
+					"text": "Sale Employee"
+					"horizontalAlignment": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 650
+					"y": 30
+					"width": 120
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button3"
+					"text": "Log out"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "logOutHandler", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "logOutHandler", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 780
+					"y": 5
+					"width": 100
+					"height": 50
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator1"
+					"orientation": 1
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 775
+					"y": 5
+					"width": 15
+					"height": 50
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 5
+				"width": 890
+				"height": 60
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) {
+				"columns": 2
+			} ) {
+				name: "panel2"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 5
+				"y": 75
+				"width": 600
+				"height": 45
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class org.jdesktop.layout.GroupLayout ) {
+				"$horizontalGroup": "par l {seq l {space :p:64:p, par l:::p {comp button1::::299:x, comp button4::::299:x}, space ::107:x, par l {comp button5::t:p:299:p, comp button2::t:p:299:p}}}"
+				"$verticalGroup": "par l {seq t {space :p:30:p, par b {comp button1::b:p:80:p, comp button2::b:p:80:p}, space ::52:x, par b {comp button5::b:p:81:p, comp button4::b:p:81:p}, space :p:41:p}}"
+			} ) {
+				name: "panel3"
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button1"
+					"text": "Create Sale Order"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "createSaleOrderHandler", true ) )
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "createSaleOrder", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button2"
+					"text": "Create Data Merchandise"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "createDataMerchandise", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button4"
+					"text": "View Sale Order"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "viewSaleOrder", true ) )
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "button5"
+					"text": "Update Data Merchandise"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "viewDataMerchandise", true ) )
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 6
+				"y": 115
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 900, 500 )
+		} )
+	}
+}

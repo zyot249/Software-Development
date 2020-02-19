@@ -1,0 +1,118 @@
+JFDML JFormDesigner: "7.0.0.6.255" Java: "1.8.0_212-release" encoding: "UTF-8"
+
+new FormModel {
+	contentType: "form/swing"
+	root: new FormRoot {
+		add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) {
+			"autoSize": false
+		} ) {
+			name: "this"
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class com.jformdesigner.runtime.NullLayout ) ) {
+				name: "header"
+				"border": new javax.swing.border.LineBorder( sfield java.awt.Color black, 1, false )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbName"
+					"text": "Tran Bich Ngoc"
+					"horizontalAlignment": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 440
+					"y": 5
+					"width": 350
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JLabel" ) {
+					name: "lbRole"
+					"text": "Supplier Employee"
+					"horizontalAlignment": 4
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 670
+					"y": 30
+					"width": 120
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnLogout"
+					"text": "Logout"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "onBtnLogoutMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 810
+					"y": 5
+					"width": 80
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JButton" ) {
+					name: "btnEdit"
+					"text": "Edit"
+					addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "onBtnEditMouseClicked", true ) )
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 810
+					"y": 30
+					"width": 80
+					"height": 25
+				} )
+				add( new FormComponent( "javax.swing.JSeparator" ) {
+					name: "separator2"
+					"orientation": 1
+				}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+					"x": 800
+					"y": 5
+					"width": 15
+					"height": 50
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"width": 890
+				"height": 60
+				"x": 5
+				"y": 5
+			} )
+			add( new FormContainer( "javax.swing.JPanel", new FormLayoutManager( class java.awt.GridLayout ) ) {
+				name: "pnBreadCrumb"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"y": 75
+				"height": 40
+				"width": 900
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnSubscribePP"
+				"text": "Subscribe providing product"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "onBtnSubscribePPMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 410
+				"y": 125
+				"width": 225
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JButton" ) {
+				name: "btnUpdatePP"
+				"text": "Update providing product"
+				addEvent( new FormEvent( "java.awt.event.MouseListener", "mouseClicked", "onBtnUpdatePPMouseClicked", true ) )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 645
+				"y": 125
+				"width": 225
+				"height": 40
+			} )
+			add( new FormComponent( "javax.swing.JSeparator" ) {
+				name: "separator1"
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 170
+				"width": 840
+			} )
+			add( new FormContainer( "javax.swing.JScrollPane", new FormLayoutManager( class javax.swing.JScrollPane ) ) {
+				name: "scrlpTable"
+				add( new FormComponent( "javax.swing.JTable" ) {
+					name: "tbOrderList"
+				} )
+			}, new FormLayoutConstraints( class com.jformdesigner.runtime.NullConstraints ) {
+				"x": 30
+				"y": 200
+				"width": 840
+				"height": 260
+			} )
+		}, new FormLayoutConstraints( null ) {
+			"location": new java.awt.Point( 0, 0 )
+			"size": new java.awt.Dimension( 900, 500 )
+		} )
+	}
+}
